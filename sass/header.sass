@@ -156,4 +156,96 @@ b, strong
 	opacity: 1
 	visibility: visible
 
+.header-wrap
+	margin-top: 40px
+	h1
+		color:#fff
+		margin-top: 120px
+		border-bottom: $main-color 8px solid
+		display: inline-block
+		padding-bottom: 20px
+	ul
+		@extend .ulmnu
+		margin-top: 10px
+		li
+			display: block
+			font-family: "RalewaySemiBold", $helvetica
+			font-size: 18px
+			line-height: em(29px)
+			position: relative
+			padding-left: 12px
+			&::before
+				content: ''
+				width: 6px
+				height: 11px
+				+triangle(12px,$main-color,right)
+				position: absolute
+				top: 9px
+				left: 0
+			a 
+				text-decoration:none
+				color: #fff
+				&:hover
+					text-decoration:underline 
+.header-left
+	margin-bottom: 40px
+
+.forms
+	background-color: transparentize(#243343, .2)
+	padding: 30px 35px
+	color: #97a4b2
+	font-size: em(13px)
+	border-bottom: #1A222B 3px solid
+	h4
+		color: #fff 
+		font-family: "PFCentroSlabProMedium", $helvetica
+		font-size: em(34px)
+		text-transform: none
+		margin: 0
+	p 
+		line-height: em(23px)
+		margin-top: 15px
+	label
+		display: block
+		margin-top: 22px
+		margin-bottom: 20px
+		span
+			letter-spacing: 1.5px
+			display: block
+			margin-bottom: 6px
+			color: #778398
+
+	input
+		display: block
+		width: 100%
+		border: none
+		box-shadow: 0 -3px #1f2a36
+		background-color: #34465a
+		text-indent: 10px
+		padding: 10px 0
+		transition: all .5s ease
+		&:focus
+			box-shadow:0 -5px #1f2a36
+			background-color: #394E65
+		.buttons
+			margin-top: 10px
+
+.button-wrap
+	text-align: center
+.buttons
+	display: inline-block
+	border: none
+	background-color: $main-color
+	color: #111
+	font-family: "PFCentroSlabProBold",$helvetica
+	font-size: em(22px)
+	padding: 12px 30px
+	border-bottom: #B97200 3px solid
+	&:hover
+		background-color: #FF8338
+	&:active
+		background-color: #d88C0e
+
+
+
 
