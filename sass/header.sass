@@ -44,20 +44,19 @@ b, strong
 	left: 0
 	right: 0
 
-// 	transition: all .5s ease
-
 .main-head
 	min-height: 620px
 	background-size: cover
 	background-position: center
 	position: relative
+	padding-bottom: 120px
 	&::before
 		@extend .before
 		background-color: #394b5f
 		opacity: .85
 	h1
 		text-transform: none
-
+		line-height: em(18px)
 .top-line
 	padding-top: 45px
 	min-height: 160px
@@ -163,7 +162,7 @@ b, strong
 		margin-top: 120px
 		border-bottom: $main-color 8px solid
 		display: inline-block
-		padding-bottom: 20px
+		padding-bottom: 0
 	ul
 		@extend .ulmnu
 		margin-top: 10px
@@ -171,8 +170,8 @@ b, strong
 			display: block
 			font-family: "RalewaySemiBold", $helvetica
 			font-size: 18px
-			line-height: em(29px)
 			position: relative
+			margin-bottom: 12px
 			padding-left: 12px
 			&::before
 				content: ''
@@ -224,6 +223,8 @@ b, strong
 		text-indent: 10px
 		padding: 10px 0
 		transition: all .5s ease
+		font-family: "PFCentroSlabProMedium", $helvetica
+		font-size: em(20px)
 		&:focus
 			box-shadow:0 -5px #1f2a36
 			background-color: #394E65
@@ -245,6 +246,21 @@ b, strong
 		background-color: #FF8338
 	&:active
 		background-color: #d88C0e
+.arrow-wrap
+	@extend .button-wrap
+	position: relative
+	z-index: 2
+	top: 50px
+.arrow-bottom
+	display: inline-block
+	width: 40px
+	height: 40px
+	background-image: url(img/arrow_down.png)
+	cursor: pointer
+	opacity: .7
+	transition: all .25ms ease
+	&:hover
+		opacity: .1
 
 
 
