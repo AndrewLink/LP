@@ -7,6 +7,20 @@ $(document).ready(function() {
 	$(".section-content .info-item").equalHeights();
 	$(".s1-bottom .info-item").equalHeights();
 
+
+	$(".section_4").waypoint(function(){
+
+		$(".section_4 .card").each(function(index) {
+			var ths=$(this);
+			setInterval(function(){
+				ths.removeClass("card-off").addClass("card-on");
+			}, 200*index);
+		});
+
+	}, {
+		offset: "10%"
+	});
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");

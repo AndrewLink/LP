@@ -245,12 +245,63 @@ body textarea:required:valid
 		width: 70px
 		margin-top: 30px
 
+.s_gray
+	background-color: #e5e5e5
+	&::before
+		background-image: url(img/bah_3.png)
+	.section-bottom
+		background-color: #d6d6d6
+
+.section-pb
+	padding-bottom: 70px
+
+.cards
+	text-align: center
+	perspective: 600px
 
 
-
-
-
-
+	.card
+		&-on
+			opacity: 1
+		&-off
+			transform: rotateY(100deg)
+			opacity: 0
+		&:hover
+			border-color: $main-color
+		// 	.img-wrap
+		// 		transform: scale(1.1)
+		// .img-wrap
+		// 	transition: all .25s ease
+		transition: all 1.2s ease
+		vertical-align: top
+		width: 260px
+		display: inline-block
+		background-color: #2c3949
+		margin:0 14px
+		color: #97a4b2
+		font-size: em(15px)
+		line-height: em(22px)
+		padding: 54px 28px 52px
+		.card-icon
+			width: 120px
+			height: 120px
+			background-color: $main-color
+			border-radius: 10em
+			display: inline-block
+			line-height: 120px
+			img
+				width: 80px
+		h4
+			color: #e5e5e5
+			font-family: "RalewayBold", $helvetica
+			font-size: em(18px)
+			margin-top: 30px
+			margin-bottom: 18px
+		p 
+			margin-bottom: 0
+			height: 80px
+			strong
+				color: $main-color
 
 
 
