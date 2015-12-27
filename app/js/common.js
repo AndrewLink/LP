@@ -21,6 +21,23 @@ $(document).ready(function() {
 		offset: "10%"
 	});
 
+	$(".section_5").waypoint(function(){
+
+		$(".section_5 .tc-item").each(function(index) {
+			var ths = $(this);
+			setTimeout(function(){
+				var myAnimation = new DrawFillSVG({
+					elementId: "tc-svg-" + index
+				});
+				ths.removeClass("").addClass("");
+			}, 700*index);
+		});
+
+	}, {
+		offset: "10%"
+	});
+
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");

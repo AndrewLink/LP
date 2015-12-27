@@ -2,6 +2,11 @@
 	
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+	.triangles-container
+		.tc-item
+			margin-bottom: 15px
+			&:first-child
+				margin-left: -40px
 	.main-mnu
 		display: none
 		min-width: 300px
@@ -106,6 +111,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.triangles-container
+		.tc-item
+			margin-left: 0px
 	.phone-wrap
 		.phone
 			font-size: em(18px)
