@@ -1,3 +1,3 @@
 # LP
 ArmataGr
-Creating Landing page with blackjack 
+Creating Landing page 
