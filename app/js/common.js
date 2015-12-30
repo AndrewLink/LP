@@ -32,9 +32,23 @@ $(document).ready(function() {
 				ths.removeClass("").addClass("");
 			}, 700*index);
 		});
-
+		this.destroy();
 	}, {
 		offset: "10%"
+	});
+
+
+		$(".section_6").waypoint(function() {
+
+		$(".section_6 .team").each(function(index) {
+			var ths = $(this);
+			setInterval(function() {
+				ths.removeClass("team-off").addClass("team-on");
+			}, 200*index);
+		});
+
+	}, {
+		offset : "35%"
 	});
 
 
