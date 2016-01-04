@@ -6,6 +6,7 @@ $(document).ready(function() {
 	});
 	$(".section-content .info-item").equalHeights();
 	$(".s1-bottom .info-item").equalHeights();
+	$(".s2-item .img-wrap").equalHeights();
 
 
 	$(".section_4").waypoint(function(){
@@ -76,7 +77,7 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
-				
+
 				$("#form").trigger("reset");
 			}, 1000);
 		});
