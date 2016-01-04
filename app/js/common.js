@@ -52,6 +52,12 @@ $(document).ready(function() {
 		offset : "35%"
 	});
 
+	$(".slider").owlCarousel({
+		items: 1
+
+	});
+
+
 
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {

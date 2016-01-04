@@ -1,5 +1,7 @@
 @import "bourbon"
 @import "_var.sass"
+@import "../app/libs/magnificpopup/magnific-popup.sass"
+@import "..app/libs/owl/assets/owl.carousel"
 
 *::-webkit-input-placeholder
 	color: #fff
@@ -380,8 +382,17 @@ body textarea:required:valid
 	.container
 		h2,h3,p
 			text-align: center
+		p
+			margin-bottom: 40px
+		.slide-descr
+			text-align: center
+			p
+				margin-top: 10px
+				font-size: em(15px)
+
 	.slider
 		.slide
+			text-align: center
 			.img-wrap
 				width: 116px
 				height: 116px
@@ -389,6 +400,12 @@ body textarea:required:valid
 				border-radius:10em
 				overflow: hidden
 				box-shadow: 0 0 0 6px $main-color
+				margin: 7px
+			h3
+				text-transform: none
+				font-size: em(24px)
+
+
 
 
 
