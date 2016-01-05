@@ -53,8 +53,15 @@ $(document).ready(function() {
 	});
 
 	$(".slider").owlCarousel({
-		items: 1
-
+		items: 1,
+		nav: true,
+		navText:"",
+		loop: true,
+		fluidSpeed: 600,
+		autoplaySpeed: 600,
+		navSpeed: 600,
+		dotsSpeed: 600,
+		dragEndSpeed: 600
 	});
 
 

@@ -53,6 +53,18 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.s8-left
+		.section-head
+			h2
+				text-align: center
+				&::before
+					left: 50%
+					transform: translate(-50%, 0px)
+			p 
+				text-align: center
+
+
+
 	.section-content
 		.s1-bottom-triangle
 			background-size: cover
@@ -130,7 +142,10 @@
 	.s2-item-wrap
 		padding: 0 10px
 		width: 140px
-
+	.slider
+		.owl-controls
+			.owl-nav
+				top: 8%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
