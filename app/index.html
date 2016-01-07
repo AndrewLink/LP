@@ -97,6 +97,7 @@
 								<div class="button-wrap">
 									<button class="buttons">Отправить</button>
 								</div>
+								<input type="hidden" name="formname" value="Заявка с верхней формы">
 							</form>
 						</div>
 					</div>
@@ -197,7 +198,7 @@
 
 
 	<div class="section-bottom">
-		<a href="#" class="buttons">Заказать оценку</a>
+		<a href="#callback" class="buttons">Заказать оценку</a>
 	</div>
 
 </section>
@@ -303,7 +304,7 @@
 	</div>
 
 <div class="section-bottom">
-	<a href="#" class="buttons">Заказать сопровождение</a>
+	<a href="#callback" class="buttons">Заказать сопровождение</a>
 </div>
 </section>
 <section class="homesect s_dark section_3">
@@ -377,7 +378,7 @@
 </div>
 
 <div class="section-bottom">
-<a href="#" class="buttons">Заказать бухгалтерские услуги</a>
+<a href="#callback" class="buttons">Заказать бухгалтерские услуги</a>
 </div>
 
 </section>
@@ -418,7 +419,7 @@
 
 </div>
 	<div class="section-bottom">
-	<a href="#" class="buttons">Обратиться к нам</a>
+	<a href="#callback" class="buttons">Обратиться к нам</a>
 </div>
 </section>
 
@@ -476,7 +477,7 @@
 		</div>
 	</div>
 <div class="section-bottom">
-<a href="#" class="buttons">Оставить заявку</a>
+<a href="#callback" class="buttons">Оставить заявку</a>
 </div>
 
 </section>
@@ -660,17 +661,75 @@
 					<div class="button-wrap">
 						<button class="buttons">Отправить</button>
 					</div>
+					<input type="hidden" name="formname" value="Заявка с нижней формы">
 				</form>
 			</div>
 	</div>
 	</div>
 </section>
 
+<footer class="main-footer homesect s_dark">
+	<div class="container">
+		<div class="row">
+			<div class="footer-content">
+				
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-3">
+						<a href="#" class="logo"><img src="img/logo.svg" alt="Armata Financial Group"></a>
+					</div>
+
+					<div class="col-lg-2 col-md-9 col-sm-6  col-xs-9 col-lg-push-7">
+						<div class="phone-wrap">
+							<div class="phone">380930501108</div>
+							<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+						</div>
+					</div>
+
+					<div class="col-lg-7 col-md-12 col-lg-pull-2">
+						<nav class="main-mnu">
+							<ul>
+								<li class="active"><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Оценка</a></li>
+								<li><a href="#">Сделки M&amp;A</a></li>
+								<li><a href="#">Бухгалтерские услуги</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					
+				</div>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="top" title="Up">
+	
+</div>
 
 
-
-
-	<div class="hidden"></div>
+	<div class="hidden">
+		<form class="forms" id="callback">
+							<h4>Заявка</h4>
+							<p>Оставьте заявку и мы свяжемся с вами в течение 15 минут в рабоче
+								время с 10:00 до 18:00 с пн-пт.</p>
+								<label>
+									<span>Ваше имя:</span>
+									<input type="text" name="name" required>
+								</label>
+								<label>
+									<span>Ваш телефон:</span>
+									<input type="text" name="phone" required>
+								</label>
+								<div class="button-wrap">
+									<button class="buttons">Отправить</button>
+								</div>
+								<input type="hidden" name="formname" >
+							</form>
+	</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>

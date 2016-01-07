@@ -488,5 +488,51 @@ body textarea:required:valid
 			background-color: #c0c0c0
 			color: #333!important
 
+.main-footer
+	padding-bottom: 30px
+	.logo 
+		opacity: .35
+	.phone 
+		opacity: .45
+	.main-mnu
+		a 
+			color: #c7c9cc
+
+.top 
+	height: 36px
+	background-color: #1f2b3a
+	background-image: url(img/top.png)
+	background-repeat: no-repeat
+	cursor: pointer
+	background-position: center
+#callback
+	max-width: 320px
+	margin: auto
+	position: relative
+	h4 
+		line-height: em(18px)
+		margin-bottom: 15px
+.mfp-forms
+	.forms
+		background-color: rgba(36, 51, 67, 1)
+	.mfp-close
+		color: #fff
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.15s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			-webkit-transition: all 0.15s ease-out
+			-moz-transition: all 0.15s ease-out
+			transition: all 0.15s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0
 //ALWAYS END
 @import "_media.sass"
